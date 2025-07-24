@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-@cft@o!yv)@uq4*q2j1!j)5hxa60lnc&z0+1(lybr==_w@9-(4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# Allow host access to codespace URL and localhost
+ALLOWED_HOSTS = ['glorious-chainsaw-9x6r97vv4xw2pw7-8000.app.github.dev', 'localhost']
 
 
 # Application definition
@@ -88,7 +89,7 @@ DATABASES = {
     "default": {
         "ENGINE": "djongo",
         "NAME": "octofit_db",
-        "HOST": "localhost",
+        "HOST": "glorious-chainsaw-9x6r97vv4xw2pw7-8000.app.github.dev",
         "PORT": 27017,
     }
 }
